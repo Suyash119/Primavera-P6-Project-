@@ -1,0 +1,340 @@
+ERMHDR	18.8	2021-05-03	Project	admin	suyash11	dbxDatabaseNoName	Project Management	USD
+%T	CURRTYPE
+%F	curr_id	decimal_digit_cnt	curr_symbol	decimal_symbol	digit_group_symbol	pos_curr_fmt_type	neg_curr_fmt_type	curr_type	curr_short_name	group_digit_cnt	base_exch_rate
+%R	1	2	$	.	,	#1.1	(#1.1)	US Dollar	USD	3	1
+%R	10	2	$	.	,	#1.1	(#1.1)	Argentine Peso	ARS	3	3.077
+%R	11	2	A$	.	,	#1.1	(#1.1)	Australian Dollar	AUST	3	1.208
+%R	13	2	R$	.	,	#1.1	(#1.1)	Brazilian Real	BRL	3	2.014
+%R	14	2	£	.	,	#1.1	(#1.1)	British Pound	U.K.	3	0.501762
+%R	15	2	CA$	.	,	#1.1	(#1.1)	Canadian Dollar	CAD	3	1.10573
+%R	16	2	Y	.	,	#1.1	(#1.1)	Chinese Yuan	CNY	3	7.694
+%R	17	2	€	.	,	#1.1	(#1.1)	EURO	EUR	3	0.739088
+%R	20	2	HK$	.	,	#1.1	(#1.1)	Hong Kong Dollar	HKD	3	7.81967
+%R	21	2	Rs	.	,	#1.1	(#1.1)	Indian Rupee	INR	3	40.67
+%R	23	2	¥	.	,	#1.1	(#1.1)	Japanese Yen	JPY	3	120.167
+%R	24	2	K	.	,	#1.1	(#1.1)	Korean Won	KRW	3	924.743
+%R	25	2	N$	.	,	#1.1	(#1.1)	Mexican Peso	MXN	3	10.7938
+%R	26	2	R	.	,	#1.1	(#1.1)	Russian Rouble	RUB	3	25.8085
+%R	28	2	Sk	.	,	#1.1	(#1.1)	Swedish Krona	SEK	3	6.80579
+%R	29	2	kr	.	,	#1.1	(#1.1)	Swiss Franc	CHF	3	1.21864
+%R	30	2	NIS	.	,	#1.1	(#1.1)	Israel Shekel	ILS	3	3.96384
+%T	OBS
+%F	obs_id	parent_obs_id	guid	seq_num	obs_name	obs_descr
+%R	565			0	Enterprise	<HTML><BODY></BODY></HT
+%T	PROJECT
+%F	proj_id	fy_start_month_num	rsrc_self_add_flag	allow_complete_flag	rsrc_multi_assign_flag	checkout_flag	project_flag	step_complete_flag	cost_qty_recalc_flag	batch_sum_flag	name_sep_char	def_complete_pct_type	proj_short_name	acct_id	orig_proj_id	source_proj_id	base_type_id	clndr_id	sum_base_proj_id	task_code_base	task_code_step	priority_num	wbs_max_sum_level	strgy_priority_num	last_checksum	critical_drtn_hr_cnt	def_cost_per_qty	last_recalc_date	plan_start_date	plan_end_date	scd_end_date	add_date	last_tasksum_date	fcst_start_date	def_duration_type	task_code_prefix	guid	def_qty_type	add_by_name	web_local_root_path	proj_url	def_rate_type	add_act_remain_flag	act_this_per_link_flag	def_task_type	act_pct_link_flag	critical_path_type	task_code_prefix_flag	def_rollup_dates_flag	use_project_baseline_flag	rem_target_link_flag	reset_planned_flag	allow_neg_act_flag	sum_assign_level	last_fin_dates_id	last_baseline_update_date	cr_external_key	apply_actuals_date	location_id	loaded_scope_level	export_flag	new_fin_dates_id	baselines_to_export	baseline_names_to_export	next_data_date	close_period_flag	sum_refresh_date	trsrcsum_loaded
+%R	370	1	Y	Y	Y	N	Y	N	N	Y	.	CP_Drtn	ENE-2015					597		1000	10	10	2	500		0	0.0000	2014-06-01 00:00	2014-03-30 00:00	2014-12-12 00:00	2014-11-29 16:00	2021-05-03 00:00			DT_FixedDUR2	A	TE43KLEqhEWBvDvkfYki7Q	QT_Hour	admin			COST_PER_QTY	N	Y	TT_Task	Y	CT_TotFloat	Y	Y	Y	Y	N	N	SL_Taskrsrc						7	Y							
+%T	CALENDAR
+%F	clndr_id	default_flag	clndr_name	proj_id	base_clndr_id	last_chng_date	clndr_type	day_hr_cnt	week_hr_cnt	month_hr_cnt	year_hr_cnt	rsrc_private	clndr_data
+%R	592	N	7-Day Workweek			2009-04-27 00:00	CA_Base	8	56	172	2000	N	(0||CalendarData()((0||DaysOfWeek()((0||1()((0||0(s|08:00|f|16:00)())))(0||2()((0||0(s|08:00|f|16:00)())))(0||3()((0||0(s|08:00|f|16:00)())))(0||4()((0||0(s|08:00|f|16:00)())))(0||5()((0||0(s|08:00|f|16:00)())))(0||6()((0||0(s|08:00|f|16:00)())))(0||7()((0||0(s|08:00|f|16:00)())))))(0||VIEW(ShowTotal|Y)())(0||Exceptions()())))
+%R	597	Y	Standard 5 Day Workweek			2000-04-26 14:11	CA_Base	8	40	172	2000	N	(0||CalendarData()(    (0||DaysOfWeek()(      (0||1()())      (0||2()(        (0||0(s|08:00|f|12:00)())        (0||1(s|13:00|f|17:00)())))      (0||3()(        (0||0(s|08:00|f|12:00)())        (0||1(s|13:00|f|17:00)())))      (0||4()(        (0||0(s|08:00|f|12:00)())        (0||1(s|13:00|f|17:00)())))      (0||5()(        (0||0(s|08:00|f|12:00)())        (0||1(s|13:00|f|17:00)())))      (0||6()(        (0||0(s|08:00|f|12:00)())        (0||1(s|13:00|f|17:00)())))      (0||7()())))    (0||Exceptions()())))
+%R	638	N	7 Day work week No holidays	370	592	2021-05-03 00:00	CA_Project	8	56	172	2000	N	(0||CalendarData()(  (0||DaysOfWeek()(    (0||1()(      (0||0(s|08:00|f|16:00)())))    (0||2()(      (0||0(s|08:00|f|16:00)())))    (0||3()(      (0||0(s|08:00|f|16:00)())))    (0||4()(      (0||0(s|08:00|f|16:00)())))    (0||5()(      (0||0(s|08:00|f|16:00)())))    (0||6()(      (0||0(s|08:00|f|16:00)())))    (0||7()(      (0||0(s|08:00|f|16:00)())))))  (0||VIEW(ShowTotal|Y)())  (0||Exceptions()())))
+%T	SCHEDOPTIONS
+%F	schedoptions_id	proj_id	sched_outer_depend_type	sched_open_critical_flag	sched_lag_early_start_flag	sched_retained_logic	sched_setplantoforecast	sched_float_type	sched_calendar_on_relationship_lag	sched_use_expect_end_flag	sched_progress_override	level_float_thrs_cnt	level_outer_assign_flag	level_outer_assign_priority	level_over_alloc_pct	level_within_float_flag	level_keep_sched_date_flag	level_all_rsrc_flag	sched_use_project_end_date_for_float	enable_multiple_longest_path_calc	limit_multiple_longest_path_calc	max_multiple_longest_path	use_total_float_multiple_longest_paths	key_activity_for_multiple_longest_paths	LevelPriorityList
+%R	1	370	SD_Both	N	Y	Y	N	FT_FF	rcal_Predecessor	Y	N	0	N	5	25	N	Y	Y	Y	N	Y	10	Y		priority_type,ASC
+%T	PROJWBS
+%F	wbs_id	proj_id	obs_id	seq_num	est_wt	proj_node_flag	sum_data_flag	status_code	wbs_short_name	wbs_name	phase_id	parent_wbs_id	ev_user_pct	ev_etc_user_value	orig_cost	indep_remain_total_cost	ann_dscnt_rate_pct	dscnt_period_type	indep_remain_work_qty	anticip_start_date	anticip_end_date	ev_compute_type	ev_etc_compute_type	guid	tmpl_guid	plan_open_state
+%R	3682	370	565	0	1	Y	N	WS_Open	ENE-2015	PotdarS		3667	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	E4UseXgHfU+WO5mo2hU6uQ		
+%R	3683	370	565	1	1	N	N	WS_Open	-Lab 2.1	Milestones		3682	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	zDDiOOAkj0yRt2gbJXOQ5w		
+%R	3685	370	565	201	1	N	N	WS_Open	Lab 2.2	East Assembly Chamber		3682	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	8rQ01a3T3UydqQyEJLiQBg		
+%R	3686	370	565	301	1	N	N	WS_Open	Lab 2.3	Tunnel East Board		3682	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	LZ6QQfOFqECyK/J8EsZwBQ		
+%R	3687	370	565	401	1	N	N	WS_Open	Lab 2.4	Structure 4 East wye		3682	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	6V7SSDKCPEmZfAs9GOf1hA		
+%R	3688	370	565	501	1	N	N	WS_Open	Lab 2.5	Structure 5 East wye		3682	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	C7LhIK+gCEutGdP49DF/KA		
+%R	3689	370	565	101	1	N	N	WS_Open	Lab 2.6	Submittals		3682	6	0.88	0.0000	0.0000						EC_Cmp_pct	EE_Rem_hr	/yi6RwWPO0e0MOKd9wa3sw		
+%T	TASK
+%F	task_id	proj_id	wbs_id	clndr_id	phys_complete_pct	rev_fdbk_flag	est_wt	lock_plan_flag	auto_compute_act_flag	complete_pct_type	task_type	duration_type	status_code	task_code	task_name	rsrc_id	total_float_hr_cnt	free_float_hr_cnt	remain_drtn_hr_cnt	act_work_qty	remain_work_qty	target_work_qty	target_drtn_hr_cnt	target_equip_qty	act_equip_qty	remain_equip_qty	cstr_date	act_start_date	act_end_date	late_start_date	late_end_date	expect_end_date	early_start_date	early_end_date	restart_date	reend_date	target_start_date	target_end_date	rem_late_start_date	rem_late_end_date	cstr_type	priority_type	suspend_date	resume_date	float_path	float_path_order	guid	tmpl_guid	cstr_date2	cstr_type2	driving_path_flag	act_this_per_work_qty	act_this_per_equip_qty	external_early_start_date	external_late_end_date	create_date	update_date	create_user	update_user	location_id
+%R	35845	370	3689	638	100	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_Complete	01720A-1000	Approve as Built Survey of Tunnels/ Caverns				0	0	0	0	240	0	0	0		2014-04-19 08:00	2014-05-11 16:00	2014-07-22 08:00	2014-07-22 08:00		2014-06-01 00:00	2014-06-01 00:00			2014-04-19 08:00	2014-05-18 16:00				PT_Normal					pUo5rVbtXkikWKWJPz0VQA				N	0	0			2021-05-03 14:30	2021-05-03 19:44	NotPrmUser	NotPrmUser	
+%R	35846	370	3689	638	100	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_Complete	01720S-1000	Submit As-Built Survey of Tunnels / Caverns				0	0	0	0	160	0	0	0		2014-03-30 08:00	2014-04-25 16:00	2014-07-22 08:00	2014-07-22 08:00		2014-06-01 00:00	2014-06-01 00:00			2014-03-30 08:00	2014-04-18 16:00				PT_Normal					Fcc2DZgis0+TFI8oxKKBNg				N	0	0			2021-05-03 14:31	2021-05-03 19:44	NotPrmUser	NotPrmUser	
+%R	35847	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1140	Approve Steel Reinf Detail Plans- Structure 4 Wye East Invert Slab		96	0	240	0	0	0	240	0	0	0				2014-07-03 08:00	2014-08-01 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-07-03 08:00	2014-08-01 16:00		PT_Normal					0T9tr9vTm0SpVn3RnjMLaA				Y	0	0			2021-05-03 14:32	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35849	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1150	Approve Steel Reinf Detail plans- Structure 4 wye East Wall		192	96	240	0	0	0	240	0	0	0				2014-07-15 08:00	2014-08-13 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-07-15 08:00	2014-08-13 16:00		PT_Normal					KvoFgLLuXUqs3x0XoxMhTA				N	0	0			2021-05-03 14:35	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35850	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1160	Approve Steel Reinf Detail plans- Structure  4 wye East arch		264	168	240	0	0	0	240	0	0	0				2014-07-24 08:00	2014-08-22 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-07-24 08:00	2014-08-22 16:00		PT_Normal					AuW/E45ni0+PlP/iWSodGw				N	0	0			2021-05-03 14:36	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35851	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1210	Approve steel Reinf Detail plans- Tunnel EB2 Invert		896	0	240	0	0	0	240	0	0	0				2014-10-11 08:00	2014-11-09 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-10-11 08:00	2014-11-09 16:00		PT_Normal					lQyJevurCUqoXPI/iBGZpw				N	0	0			2021-05-03 14:37	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35852	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1220	Approve Steel Reiinf Detail plans-Tunnel EB2 Arch		408	304	240	0	0	0	240	0	0	0				2014-08-11 08:00	2014-09-09 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-08-11 08:00	2014-09-09 16:00		PT_Normal					GWmu5Fk1Kkm1J/fGFEZc0A				N	0	0			2021-05-03 14:38	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35853	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1420	Approve Steel Reinf Detail Plans-Structure 5 wye East Walls		240	0	240	0	0	0	240	0	0	0				2014-07-21 08:00	2014-08-19 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-07-21 08:00	2014-08-19 16:00		PT_Normal					U7iG+qdlsUaXpe8JvZznCA				N	0	0			2021-05-03 14:39	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35854	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-1430	Approve steel Reinf Detail Plans-Structure 5 Wye Easr Arch		352	112	240	0	0	0	240	0	0	0				2014-08-04 08:00	2014-09-02 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-08-04 08:00	2014-09-02 16:00		PT_Normal					UPnWtn1oA0qLg8MuxCPGXw				N	0	0			2021-05-03 14:40	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35856	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_Active	03200A-1520	Approve steel Reinf Details plans-East Assembly Chamber-Arch		1232	600	8	0	0	0	240	0	0	0		2014-04-05 08:00		2014-12-02 08:00	2014-12-02 16:00		2014-07-01 08:00	2014-07-01 16:00	2014-07-01 08:00	2014-07-01 16:00	2014-04-05 08:00	2014-05-04 16:00	2014-12-02 08:00	2014-12-02 16:00		PT_Normal					E+hBQ1lSL0ShaGJelAltTw				N	0	0			2021-05-03 14:42	2021-05-03 20:15	NotPrmUser	NotPrmUser	
+%R	35857	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200A-2080	Approve steel Reinf Detail plans-Electric Ductbanks		776	360	240	0	0	0	240	0	0	0				2014-09-26 08:00	2014-10-25 16:00		2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-06-21 08:00	2014-07-20 16:00	2014-09-26 08:00	2014-10-25 16:00		PT_Normal					VSo/ouOytUamh5X3l1jmkg				N	0	0			2021-05-03 14:43	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35858	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1140	Submit Steel Reinf Detail plans- Structure 4 Wye East Invert Slab		96	0	160	0	0	0	160	0	0	0				2014-06-13 08:00	2014-07-02 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-13 08:00	2014-07-02 16:00		PT_Normal					P1EJWbMbdEKtAfKoqOAc1A				Y	0	0			2021-05-03 14:44	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35859	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1150	Submit Steel Reinf Detail plans-Structure 4 wye east walls		192	0	160	0	0	0	160	0	0	0				2014-06-25 08:00	2014-07-14 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-25 08:00	2014-07-14 16:00		PT_Normal					sozlAWLiIEGOl8IW7T4OSA				N	0	0			2021-05-03 14:45	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35860	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1160	Submit Stell Reinf Detail plans-Structure 4 wye-East Arch		264	0	160	0	0	0	160	0	0	0				2014-07-04 08:00	2014-07-23 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-07-04 08:00	2014-07-23 16:00		PT_Normal					j54YcCtsSE2pNqHJ/jHqwA				N	0	0			2021-05-03 14:46	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35861	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1210	Submit Steel Reinf Detail plans-Tunnel EB2 Invert		896	0	160	0	0	0	160	0	0	0				2014-09-21 08:00	2014-10-10 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-09-21 08:00	2014-10-10 16:00		PT_Normal					3mSV25nC80OujjZ80kM07A				N	0	0			2021-05-03 14:47	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35862	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1220	Submit Steel Reinf Detail plans-tunne; EB2 Arch		408	0	160	0	0	0	160	0	0	0				2014-07-22 08:00	2014-08-10 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-07-22 08:00	2014-08-10 16:00		PT_Normal					q8wFJzhaLUaguuATZ3yTBw				N	0	0			2021-05-03 14:48	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35863	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1420	Submit Steel Reinf Detail plans -Structure 5 wye East Walls		240	0	160	0	0	0	160	0	0	0				2014-07-01 08:00	2014-07-20 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-07-01 08:00	2014-07-20 16:00		PT_Normal					RHkVbENuSkuiJgpuZJE1ZQ				N	0	0			2021-05-03 14:48	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35864	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1430	New AcSubmit Steel Reinf Detail Plans-Structure 5 wye East Arch		352	0	160	0	0	0	160	0	0	0				2014-07-15 08:00	2014-08-03 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-07-15 08:00	2014-08-03 16:00		PT_Normal					Z1sHo3PPV0+7Nw4WCcegIw				N	0	0			2021-05-03 14:49	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35865	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-1520	Submit Steel Reinf Detail Plans-East Assembly Chamber Arch		1232	0	240	0	0	0	240	0	0	0				2014-11-02 08:00	2014-12-01 16:00		2014-06-01 08:00	2014-06-30 16:00	2014-06-01 08:00	2014-06-30 16:00	2014-06-01 08:00	2014-06-30 16:00	2014-11-02 08:00	2014-12-01 16:00		PT_Normal					w7fY8ujxIka7BGwAWxdePw				N	0	0			2021-05-03 14:50	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35866	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03200S-2080	Submit Steel Reinf Detail Plans- Electric Duct banks		776	0	160	0	0	0	160	0	0	0				2014-09-06 08:00	2014-09-25 16:00		2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-06-01 08:00	2014-06-20 16:00	2014-09-06 08:00	2014-09-25 16:00		PT_Normal					6wk2edrK6kySEKYjJh0YHQ				N	0	0			2021-05-03 14:50	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35867	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	03370A-1020	Approve Structural Shotcrete mix		472	288	240	0	0	0	240	0	0	0				2014-07-30 08:00	2014-08-28 16:00		2014-06-01 08:00	2014-06-30 16:00	2014-06-01 08:00	2014-06-30 16:00	2014-06-01 08:00	2014-06-30 16:00	2014-07-30 08:00	2014-08-28 16:00		PT_Normal					x3BdwFx0MU6Z39hd2nksOw				N	0	0			2021-05-03 14:51	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35868	370	3689	638	100	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_Complete	03370S-1020	Submit Structural Shotcrete Mix				0	0	0	0	160	0	0	0		2014-03-30 08:00	2014-04-18 16:00	2014-07-30 08:00	2014-07-30 08:00		2014-06-01 00:00	2014-06-01 00:00			2014-03-30 08:00	2014-04-18 16:00				PT_Normal					LOSE59SqUUeerF1v0dFLgg				N	0	0			2021-05-03 14:52	2021-05-03 19:44	NotPrmUser	NotPrmUser	
+%R	35869	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	07122A-1300	Approve Waterproofing shop drawings- Tunnel EB2		288	0	240	0	0	0	240	0	0	0				2014-07-08 08:00	2014-08-06 16:00		2014-06-02 08:00	2014-07-01 16:00	2014-06-02 08:00	2014-07-01 16:00	2014-06-02 08:00	2014-07-01 16:00	2014-07-08 08:00	2014-08-06 16:00		PT_Normal					T7+zhiKS9UW0VGEjhyT40g				N	0	0			2021-05-03 14:52	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35870	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	07122A-1360	Approve Waterproofing Shop Drawings- Structural 4 East Wye		192	0	240	0	0	0	240	0	0	0				2014-06-26 08:00	2014-07-25 16:00		2014-06-02 08:00	2014-07-01 16:00	2014-06-02 08:00	2014-07-01 16:00	2014-06-02 08:00	2014-07-01 16:00	2014-06-26 08:00	2014-07-25 16:00		PT_Normal					yTm0ulW0dEufW/X5eyEEfg				N	0	0			2021-05-03 14:53	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35871	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	07122A-1430	Approve waterproofing shop drwaings - Structure 5 East wye		328	40	240	0	0	0	240	0	0	0				2014-07-13 08:00	2014-08-11 16:00		2014-06-02 08:00	2014-07-01 16:00	2014-06-02 08:00	2014-07-01 16:00	2014-06-02 08:00	2014-07-01 16:00	2014-07-13 08:00	2014-08-11 16:00		PT_Normal					QqTevPhj60CIqPybnurZaw				N	0	0			2021-05-03 14:54	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35872	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	07122S-1300	Submit Waterproofing shop drawings-Tunnel EB2		288	0	8	0	0	0	8	0	0	0				2014-07-07 08:00	2014-07-07 16:00		2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-07-07 08:00	2014-07-07 16:00		PT_Normal					gl5/uCHWmUCwvCtT9dtOwA				N	0	0			2021-05-03 14:55	2021-05-03 17:29	NotPrmUser	NotPrmUser	
+%R	35873	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	07122S-1360	Submit Waterproofing Shop Drawings -Structure 4 East wye		192	0	8	0	0	0	8	0	0	0				2014-06-25 08:00	2014-06-25 16:00		2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-06-25 08:00	2014-06-25 16:00		PT_Normal					G9qOPPujCEqt7Ysb0jcYtA				N	0	0			2021-05-03 14:56	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35874	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1000	Form and Pour Overbreak Concr-East Assemb Chamb		576	0	16	0	0	0	16	0	0	0				2014-08-18 08:00	2014-08-19 16:00		2014-06-07 08:00	2014-06-08 16:00	2014-06-07 08:00	2014-06-08 16:00	2014-06-07 08:00	2014-06-08 16:00	2014-08-18 08:00	2014-08-19 16:00		PT_Normal					DfDBxwU+90eKiyDjEup6Ag				N	0	0			2021-05-03 14:57	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35875	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1010	Smoothing Shotcrete East Assemb Chamb		1392	440	8	0	0	0	8	0	0	0				2014-11-30 08:00	2014-11-30 16:00		2014-06-09 08:00	2014-06-09 16:00	2014-06-09 08:00	2014-06-09 16:00	2014-06-09 08:00	2014-06-09 16:00	2014-11-30 08:00	2014-11-30 16:00		PT_Normal					2/XTwax2KEOcCxQ8II4KGw				N	0	0			2021-05-03 15:01	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35876	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1020	Waterproof arch-east assembly chamber		952	320	16	0	0	0	16	0	0	0				2014-12-01 08:00	2014-12-02 16:00		2014-08-04 08:00	2014-08-05 16:00	2014-08-04 08:00	2014-08-05 16:00	2014-08-04 08:00	2014-08-05 16:00	2014-12-01 08:00	2014-12-02 16:00		PT_Normal					NJX/bvt5FkqTGG2ZsquzeQ				N	0	0			2021-05-03 15:01	2021-05-03 17:29	NotPrmUser	NotPrmUser	
+%R	35877	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1030	Install arch rebar-east assembly chamber		632	144	40	0	0	0	40	0	0	0				2014-12-03 08:00	2014-12-07 16:00		2014-09-15 08:00	2014-09-19 16:00	2014-09-15 08:00	2014-09-19 16:00	2014-09-15 08:00	2014-09-19 16:00	2014-12-03 08:00	2014-12-07 16:00		PT_Normal					ga4VPYXCOkCi2gl5+EgZHA				N	0	0			2021-05-03 15:02	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35878	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1040	Pour arch east assembly chamber		488	392	16	0	0	0	16	0	0	0				2014-12-08 08:00	2014-12-09 16:00		2014-10-08 08:00	2014-10-09 16:00	2014-10-08 08:00	2014-10-09 16:00	2014-10-08 08:00	2014-10-09 16:00	2014-12-08 08:00	2014-12-09 16:00		PT_Normal					mzejjFZ8j0egk1SbbexJRA				N	0	0			2021-05-03 15:02	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35879	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1050	Duct bank East assembly chambert		96	0	8	0	0	0	8	0	0	0				2014-12-11 08:00	2014-12-11 16:00		2014-11-29 08:00	2014-11-29 16:00	2014-11-29 08:00	2014-11-29 16:00	2014-11-29 08:00	2014-11-29 16:00	2014-12-11 08:00	2014-12-11 16:00		PT_Normal					rOPYoVSsp0mIaXSEt8mHYw				Y	0	0			2021-05-03 15:03	2021-05-03 17:29	NotPrmUser	NotPrmUser	
+%R	35880	370	3683	638	100	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_Complete	MOMS001	Notice to proceed				0	0	0	0	0	0	0	0		2014-03-30 08:00	2014-03-30 08:00	2014-06-13 08:00	2014-06-13 08:00		2014-06-01 00:00	2014-06-01 00:00			2014-03-30 08:00	2014-03-30 08:00				PT_Normal					y/340He8NECCbyFtLz46yQ				Y	0	0			2021-05-03 15:03	2021-05-03 19:44	NotPrmUser	NotPrmUser	
+%R	35883	370	3683	638	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	MOMS040	Milestone 4-Final Completion 1065 CCD After NTP (2/28/17)		96	0	0	0	0	0	0	0	0	0				2014-12-11 16:00	2014-12-11 16:00		2014-11-29 16:00	2014-11-29 16:00	2014-11-29 16:00	2014-11-29 16:00	2014-11-29 16:00	2014-11-29 16:00	2014-12-11 16:00	2014-12-11 16:00		PT_Normal					aezizBixT0CL83VBgGjWAA				Y	0	0			2021-05-03 15:11	2021-05-03 19:24	NotPrmUser	NotPrmUser	
+%R	35884	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1000	Waterproof Invert and Arch-Tunnel EB2-Slructure 4 Wye East to GCT 4 Crossover		288	0	8	0	0	0	8	0	0	0				2014-08-07 08:00	2014-08-07 16:00		2014-07-02 08:00	2014-07-02 16:00	2014-07-02 08:00	2014-07-02 16:00	2014-07-02 08:00	2014-07-02 16:00	2014-08-07 08:00	2014-08-07 16:00		PT_Normal					m6MB5rVxtECH68qZIcjf1A				N	0	0			2021-05-03 15:12	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35885	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1010	Install Invert Rebar-Tunnel EB2-Structure4 Crossover toGCT 4 Wye East		896	0	8	0	0	0	8	0	0	0				2014-11-10 08:00	2014-11-10 16:00		2014-07-21 08:00	2014-07-21 16:00	2014-07-21 08:00	2014-07-21 16:00	2014-07-21 08:00	2014-07-21 16:00	2014-11-10 08:00	2014-11-10 16:00		PT_Normal					AiCFyTPg302qccSy6nGN3A				N	0	0			2021-05-03 15:13	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35886	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1015	Install Track Drains and Manholes-Tunnel EB2-Structure 4 Crossover to GCT 4 Wye East		1232	144	8	0	0	0	8	0	0	0				2014-12-04 08:00	2014-12-04 16:00		2014-07-03 08:00	2014-07-03 16:00	2014-07-03 08:00	2014-07-03 16:00	2014-07-03 08:00	2014-07-03 16:00	2014-12-04 08:00	2014-12-04 16:00		PT_Normal					plUp9GR750abE9NGacPq3A				N	0	0			2021-05-03 15:14	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35887	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1020	Pour Invert-T um-el EB2-Str ucture 4 Crossover to GCT 4 Wye East		1088	0	8	0	0	0	8	0	0	0				2014-12-05 08:00	2014-12-05 16:00		2014-07-22 08:00	2014-07-22 16:00	2014-07-22 08:00	2014-07-22 16:00	2014-07-22 08:00	2014-07-22 16:00	2014-12-05 08:00	2014-12-05 16:00		PT_Normal					MBVns7L5S0+lY/Aa432Sbw				N	0	0			2021-05-03 15:14	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35888	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1030	lnstallArch Rebar-Tunnel EB2-Structure 4 Crossover to GCT 4 Wye East		408	0	16	0	0	0	16	0	0	0				2014-10-16 08:00	2014-10-17 16:00		2014-08-26 08:00	2014-08-27 16:00	2014-08-26 08:00	2014-08-27 16:00	2014-08-26 08:00	2014-08-27 16:00	2014-10-16 08:00	2014-10-17 16:00		PT_Normal					631dkieBfkOAbo1ruToFmw				N	0	0			2021-05-03 15:15	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35889	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1040	Pour Arch-Tunnel EB2-Structure 4 Crossover to GCT 4 Wye East		1152	1056	8	0	0	0	8	0	0	0				2014-10-23 08:00	2014-10-23 16:00		2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-10-23 08:00	2014-10-23 16:00		PT_Normal					zijfS8v4fkKlSvQ6Bg0byA				N	0	0			2021-05-03 15:15	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35890	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1050	Ductbank-TumelEB2-Structure 4 Wye East to GCT 4 Crossover		128	32	8	0	0	0	8	0	0	0				2014-10-29 08:00	2014-10-29 16:00		2014-10-13 08:00	2014-10-13 16:00	2014-10-13 08:00	2014-10-13 16:00	2014-10-13 08:00	2014-10-13 16:00	2014-10-29 08:00	2014-10-29 16:00		PT_Normal					x2xXixg1EU6Gkmohg2lDHQ				N	0	0			2021-05-03 15:15	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35891	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB21-1051	Conduit for Ductbank-Tunnel EB2-Structu re 4 Wye East to GCT 4 Crossover		128	0	8	0	0	0	8	0	0	0				2014-10-28 08:00	2014-10-28 16:00		2014-10-12 08:00	2014-10-12 16:00	2014-10-12 08:00	2014-10-12 16:00	2014-10-12 08:00	2014-10-12 16:00	2014-10-28 08:00	2014-10-28 16:00		PT_Normal					8jXebiEdCESzTP2skSXlQg				N	0	0			2021-05-03 15:16	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35892	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1000	Waterproof Invert and Arch-Tunnel EB2-55th St. Ventilation Facility to GCT 4 Crossover		288	0	16	0	0	0	16	0	0	0				2014-08-08 08:00	2014-08-09 16:00		2014-07-03 08:00	2014-07-04 16:00	2014-07-03 08:00	2014-07-04 16:00	2014-07-03 08:00	2014-07-04 16:00	2014-08-08 08:00	2014-08-09 16:00		PT_Normal					/P/3FMtHik6/KnVJqgLIgg				N	0	0			2021-05-03 15:18	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35893	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1010	Install Invert Rebar-Tunnel EB2-55th St  Ventilation Facility to GCT 4 Cross over		896	0	8	0	0	0	8	0	0	0				2014-11-11 08:00	2014-11-11 16:00		2014-07-22 08:00	2014-07-22 16:00	2014-07-22 08:00	2014-07-22 16:00	2014-07-22 08:00	2014-07-22 16:00	2014-11-11 08:00	2014-11-11 16:00		PT_Normal					4W2TaQYl+ESUpT49/GRGRQ				N	0	0			2021-05-03 15:18	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35894	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1015	Install Track Drains and Manholes-Tunnel EB2-55th St. Ventilation Facility to GCT 4 Crossover		896	0	8	0	0	0	8	0	0	0				2014-11-11 08:00	2014-11-11 16:00		2014-07-22 08:00	2014-07-22 16:00	2014-07-22 08:00	2014-07-22 16:00	2014-07-22 08:00	2014-07-22 16:00	2014-11-11 08:00	2014-11-11 16:00		PT_Normal					drFDEivL3kGnnRnAy2E9gA				N	0	0			2021-05-03 15:19	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35895	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1020	Pour Invert-Tunnel EB2-55th St. Ventilation Facility to GCT 4 Crossover		1088	0	8	0	0	0	8	0	0	0				2014-12-06 08:00	2014-12-06 16:00		2014-07-23 08:00	2014-07-23 16:00	2014-07-23 08:00	2014-07-23 16:00	2014-07-23 08:00	2014-07-23 16:00	2014-12-06 08:00	2014-12-06 16:00		PT_Normal					r/QhY1PhtUqs7Y2ARKjM6g				N	0	0			2021-05-03 15:19	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35898	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1030	lnstallArch Rebar-Tunnel EB2-55th St. Ventilation Facility to GCT 4 Crossover		408	312	16	0	0	0	16	0	0	0				2014-10-20 08:00	2014-10-21 16:00		2014-08-30 08:00	2014-08-31 16:00	2014-08-30 08:00	2014-08-31 16:00	2014-08-30 08:00	2014-08-31 16:00	2014-10-20 08:00	2014-10-21 16:00		PT_Normal					coju0HzDdk+64xv/m8HVrA				N	0	0			2021-05-03 15:20	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35899	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1040	Pour Arch-Tunnel EB2-55th St. Ventilation Facility to GCT 4 Crossove  r		96	0	16	0	0	0	16	0	0	0				2014-10-22 08:00	2014-10-23 16:00		2014-10-10 08:00	2014-10-11 16:00	2014-10-10 08:00	2014-10-11 16:00	2014-10-10 08:00	2014-10-11 16:00	2014-10-22 08:00	2014-10-23 16:00		PT_Normal					cZD9Au3sSUe9U4eeAb4lyw				Y	0	0			2021-05-03 15:21	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35900	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1050	Ductbank-Tumel EB2-Structure 4 Crossover to 55th St. Ventilation Facility		96	0	48	0	0	0	48	0	0	0				2014-10-30 08:00	2014-11-04 16:00		2014-10-18 08:00	2014-10-23 16:00	2014-10-18 08:00	2014-10-23 16:00	2014-10-18 08:00	2014-10-23 16:00	2014-10-30 08:00	2014-11-04 16:00		PT_Normal					PHNDsVoHvEiZgwga2kADSw				Y	0	0			2021-05-03 15:23	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35901	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB22-1051	Conduit for Ductbank-Tunnel EB2-Slructure 4 Crossover to 55th St. Ventilation Facility		96	0	48	0	0	0	48	0	0	0				2014-10-24 08:00	2014-10-29 16:00		2014-10-12 08:00	2014-10-17 16:00	2014-10-12 08:00	2014-10-17 16:00	2014-10-12 08:00	2014-10-17 16:00	2014-10-24 08:00	2014-10-29 16:00		PT_Normal					fTywpZrwSESzAXFKERi56Q				Y	0	0			2021-05-03 15:24	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35902	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1000	Waterproof Invert and Arch-Tunnel EB2-Slructure 5 Wye East to 55th St. Ventilation Facility		288	0	16	0	0	0	16	0	0	0				2014-08-10 08:00	2014-08-11 16:00		2014-07-05 08:00	2014-07-06 16:00	2014-07-05 08:00	2014-07-06 16:00	2014-07-05 08:00	2014-07-06 16:00	2014-08-10 08:00	2014-08-11 16:00		PT_Normal					vD6944umwECtBnD6q+hJjQ				N	0	0			2021-05-03 15:24	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35903	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1010	Install Invert Rebar-Tunnel EB2-Structure 5 Wye East to 55th St. Ventilation Facility		896	0	8	0	0	0	8	0	0	0				2014-11-12 08:00	2014-11-12 16:00		2014-07-23 08:00	2014-07-23 16:00	2014-07-23 08:00	2014-07-23 16:00	2014-07-23 08:00	2014-07-23 16:00	2014-11-12 08:00	2014-11-12 16:00		PT_Normal					kfy3jBEVhkGQL6mJwMRWvA				N	0	0			2021-05-03 15:27	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35904	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1015	Install Track Drains and Manholes-Tunnel EB2-Structure 5 Wye East to 55th St. Ventilation Fac ility		1096	8	8	0	0	0	8	0	0	0				2014-12-07 08:00	2014-12-07 16:00		2014-07-23 08:00	2014-07-23 16:00	2014-07-23 08:00	2014-07-23 16:00	2014-07-23 08:00	2014-07-23 16:00	2014-12-07 08:00	2014-12-07 16:00		PT_Normal					Vzwn0IK84kKtqwB9mgY5FQ				N	0	0			2021-05-03 15:27	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35905	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1020	Pour Invert-Tunnel EB2-S1ructure 5 Wye Ea st to 55th St. Ventilation Facility		1088	600	8	0	0	0	8	0	0	0				2014-12-07 08:00	2014-12-07 16:00		2014-07-24 08:00	2014-07-24 16:00	2014-07-24 08:00	2014-07-24 16:00	2014-07-24 08:00	2014-07-24 16:00	2014-12-07 08:00	2014-12-07 16:00		PT_Normal					exMRyYvlKE6hxWfqlr+lTg				N	0	0			2021-05-03 15:28	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35906	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1030	Install Arch Rebar-Tunnel EB2-Structure 5 Wye East to 55th St. Vential tion Facility		408	0	16	0	0	0	16	0	0	0				2014-10-18 08:00	2014-10-19 16:00		2014-08-28 08:00	2014-08-29 16:00	2014-08-28 08:00	2014-08-29 16:00	2014-08-28 08:00	2014-08-29 16:00	2014-10-18 08:00	2014-10-19 16:00		PT_Normal					esHgoljfFEyloREXxuhP+g				N	0	0			2021-05-03 15:30	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35907	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1040	Pour Arch-Tunnel EB2-Structure 5 Wye East to 55th St. Ventilation Facility		96	0	16	0	0	0	16	0	0	0				2014-10-20 08:00	2014-10-21 16:00		2014-10-08 08:00	2014-10-09 16:00	2014-10-08 08:00	2014-10-09 16:00	2014-10-08 08:00	2014-10-09 16:00	2014-10-20 08:00	2014-10-21 16:00		PT_Normal					xzJG99H6jE+dHb9yBzi1xA				Y	0	0			2021-05-03 15:30	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35908	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1050	Ducibank-TumelEB2-55th St. Ventilation Facility to GCT 5 Wye East		96	0	64	0	0	0	64	0	0	0				2014-11-13 08:00	2014-11-20 16:00		2014-11-01 08:00	2014-11-08 16:00	2014-11-01 08:00	2014-11-08 16:00	2014-11-01 08:00	2014-11-08 16:00	2014-11-13 08:00	2014-11-20 16:00		PT_Normal					/duJVyEulEO7KfIouDJOZQ				Y	0	0			2021-05-03 15:31	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35909	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB23-1051	Conduit for Ductbank-Tunnel EB2-55th St. Ventilation Facility to GCT 5 Wye East		96	0	64	0	0	0	64	0	0	0				2014-11-05 08:00	2014-11-12 16:00		2014-10-24 08:00	2014-10-31 16:00	2014-10-24 08:00	2014-10-31 16:00	2014-10-24 08:00	2014-10-31 16:00	2014-11-05 08:00	2014-11-12 16:00		PT_Normal					SmubDfII+k67Vus3fSn0DQ				Y	0	0			2021-05-03 15:31	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35910	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB24-1000	Waterproof Arch-Tunnel EB2-Assembly Chamber  East to  GCT 5 Wye East		952	0	160	0	0	0	160	0	0	0				2014-11-11 08:00	2014-11-30 16:00		2014-07-15 08:00	2014-08-03 16:00	2014-07-15 08:00	2014-08-03 16:00	2014-07-15 08:00	2014-08-03 16:00	2014-11-11 08:00	2014-11-30 16:00		PT_Normal					ikP3ckl6XEu85J2dE3tufA				N	0	0			2021-05-03 15:32	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35911	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB24-1010	Install Arch Rebar-Tunnel EB2-Assembly Chamber East to  GCT 5 Wye East		96	0	136	0	0	0	136	0	0	0				2014-09-10 08:00	2014-09-26 16:00		2014-08-29 08:00	2014-09-14 16:00	2014-08-29 08:00	2014-09-14 16:00	2014-08-29 08:00	2014-09-14 16:00	2014-09-10 08:00	2014-09-26 16:00		PT_Normal					nUiFJUYJwEyQOELp3Tu9ng				Y	0	0			2021-05-03 15:32	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35912	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB24-1020	Pour Arch-Tunnel EB2-Assembly Chamber East to  GCT 5 Wye East		96	0	184	0	0	0	184	0	0	0				2014-09-27 08:00	2014-10-19 16:00		2014-09-15 08:00	2014-10-07 16:00	2014-09-15 08:00	2014-10-07 16:00	2014-09-15 08:00	2014-10-07 16:00	2014-09-27 08:00	2014-10-19 16:00		PT_Normal					xTzM9PzzlEGOF9+KAKtbtg				Y	0	0			2021-05-03 15:33	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35913	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB24-1030	Ductbank-TumelEB2 GCT 5 Wye East to Assembly Chamber East		96	0	96	0	0	0	96	0	0	0				2014-11-28 08:00	2014-12-09 16:00		2014-11-16 08:00	2014-11-27 16:00	2014-11-16 08:00	2014-11-27 16:00	2014-11-16 08:00	2014-11-27 16:00	2014-11-28 08:00	2014-12-09 16:00		PT_Normal					U4fqts7Y6UWIGvJtkZuyaw				Y	0	0			2021-05-03 15:33	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35914	370	3686	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	TEB24-1031	Conduit for Ductbank-Tunnel EB2 G CT 5 Wye East to Assembly Chamber East		312	216	96	0	0	0	96	0	0	0				2014-11-16 08:00	2014-11-27 16:00		2014-10-08 08:00	2014-10-19 16:00	2014-10-08 08:00	2014-10-19 16:00	2014-10-08 08:00	2014-10-19 16:00	2014-11-16 08:00	2014-11-27 16:00		PT_Normal					qhNQA/hx9EmYqCY++NRrpg				N	0	0			2021-05-03 15:34	2021-05-03 18:01	NotPrmUser	NotPrmUser	
+%R	35915	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1000	Smoothing and Backfill Shotcrete-Structure 4 East Wye		408	0	24	0	0	0	24	0	0	0				2014-07-22 08:00	2014-07-24 16:00		2014-06-01 08:00	2014-06-03 16:00	2014-06-01 08:00	2014-06-03 16:00	2014-06-01 08:00	2014-06-03 16:00	2014-07-22 08:00	2014-07-24 16:00		PT_Normal					LIlTh40dXE230XFzIPDorQ				N	0	0			2021-05-03 15:34	2021-05-03 18:01	NotPrmUser	NotPrmUser	
+%R	35916	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1010	Install Porous Concrete and Perforated Drain Pipe-Structure 4 East Wye		408	216	8	0	0	0	8	0	0	0				2014-07-25 08:00	2014-07-25 16:00		2014-06-04 08:00	2014-06-04 16:00	2014-06-04 08:00	2014-06-04 16:00	2014-06-04 08:00	2014-06-04 16:00	2014-07-25 08:00	2014-07-25 16:00		PT_Normal					lc7+808/HUWSxr9B7Q1jMA				N	0	0			2021-05-03 15:35	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35917	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_Active	W4E-1020	Waterproof-S1ructure 4 East Wye		192	0	56	0	0	0	56	0	0	0		2014-05-23 08:00		2014-07-26 08:00	2014-08-01 16:00		2014-07-02 08:00	2014-07-08 16:00	2014-07-02 08:00	2014-07-08 16:00	2014-05-23 08:00	2014-05-29 16:00	2014-07-26 08:00	2014-08-01 16:00		PT_Normal					Z7gzAC++A0CG8VJLSHvnGg				N	0	0			2021-05-03 15:36	2021-05-03 19:44	NotPrmUser	NotPrmUser	
+%R	35918	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1030	Base Slab-Structure 4 East Wye		96	0	96	0	0	0	96	0	0	0				2014-08-02 08:00	2014-08-13 16:00		2014-07-21 08:00	2014-08-01 16:00	2014-07-21 08:00	2014-08-01 16:00	2014-07-21 08:00	2014-08-01 16:00	2014-08-02 08:00	2014-08-13 16:00		PT_Normal					+a4XmXOrIEiEfDG8GQr7xA				Y	0	0			2021-05-03 15:36	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35919	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1035	Install Track Drains and Manholes-Structure 4 East Wye		192	96	96	0	0	0	96	0	0	0				2014-08-02 08:00	2014-08-13 16:00		2014-07-09 08:00	2014-07-20 16:00	2014-07-09 08:00	2014-07-20 16:00	2014-07-09 08:00	2014-07-20 16:00	2014-08-02 08:00	2014-08-13 16:00		PT_Normal					j32VbU4J4UyT7aaeWY4wAA				N	0	0			2021-05-03 15:36	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35920	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1037	Install Drain Pipe and Fittings-Base  Slab-Structure 4 East Wye		192	96	96	0	0	0	96	0	0	0				2014-08-02 08:00	2014-08-13 16:00		2014-07-09 08:00	2014-07-20 16:00	2014-07-09 08:00	2014-07-20 16:00	2014-07-09 08:00	2014-07-20 16:00	2014-08-02 08:00	2014-08-13 16:00		PT_Normal					4+Z1A4rEF0iDSNu2KZBimQ				N	0	0			2021-05-03 15:37	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35921	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1039	Install Conduit-Base Slab-Structure 4 East Wye		192	96	96	0	0	0	96	0	0	0				2014-08-02 08:00	2014-08-13 16:00		2014-07-09 08:00	2014-07-20 16:00	2014-07-09 08:00	2014-07-20 16:00	2014-07-09 08:00	2014-07-20 16:00	2014-08-02 08:00	2014-08-13 16:00		PT_Normal					f387Hyg5EU+4SpFs1Py04w				N	0	0			2021-05-03 15:38	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35922	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1040	Walls to Siringine  Structure 4 East Wye		96	0	72	0	0	0	72	0	0	0				2014-08-14 08:00	2014-08-22 16:00		2014-08-02 08:00	2014-08-10 16:00	2014-08-02 08:00	2014-08-10 16:00	2014-08-02 08:00	2014-08-10 16:00	2014-08-14 08:00	2014-08-22 16:00		PT_Normal					y+MpzNBn10uq0zeAHy8Spw				Y	0	0			2021-05-03 15:38	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35923	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1045	Install Drain Pipe and Fittings-Walls to Springlhe Structure 4 East Wye		96	0	72	0	0	0	72	0	0	0				2014-08-14 08:00	2014-08-22 16:00		2014-08-02 08:00	2014-08-10 16:00	2014-08-02 08:00	2014-08-10 16:00	2014-08-02 08:00	2014-08-10 16:00	2014-08-14 08:00	2014-08-22 16:00		PT_Normal					BMFAgSVsGkOlIbi9OjN4lA				Y	0	0			2021-05-03 15:39	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35924	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1060	Install Arch Mesh Outer Layer-Structure 4 East Wye		96	0	48	0	0	0	48	0	0	0				2014-08-23 08:00	2014-08-28 16:00		2014-08-11 08:00	2014-08-16 16:00	2014-08-11 08:00	2014-08-16 16:00	2014-08-11 08:00	2014-08-16 16:00	2014-08-23 08:00	2014-08-28 16:00		PT_Normal					/SJH1oWZGkK3twiRAS8mDA				Y	0	0			2021-05-03 15:39	2021-05-03 18:01	NotPrmUser	NotPrmUser	
+%R	35925	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1070	ShotcreteArch to Inner Layer-Structure 4 East Wye		96	0	24	0	0	0	24	0	0	0				2014-08-29 08:00	2014-08-31 16:00		2014-08-17 08:00	2014-08-19 16:00	2014-08-17 08:00	2014-08-19 16:00	2014-08-17 08:00	2014-08-19 16:00	2014-08-29 08:00	2014-08-31 16:00		PT_Normal					17JZpxS5YUi4HcnmiQM0FA				Y	0	0			2021-05-03 15:40	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35926	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1080	Install Arch Mesh Inner Layer-Structure 4 East Wye		96	0	48	0	0	0	48	0	0	0				2014-09-01 08:00	2014-09-06 16:00		2014-08-20 08:00	2014-08-25 16:00	2014-08-20 08:00	2014-08-25 16:00	2014-08-20 08:00	2014-08-25 16:00	2014-09-01 08:00	2014-09-06 16:00		PT_Normal					VdIl5d3HSESIiss58PLyKw				Y	0	0			2021-05-03 15:40	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35927	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1090	Shotcrete Arch to Finish-Structure 4 East Wye		232	0	16	0	0	0	16	0	0	0				2014-09-24 08:00	2014-09-25 16:00		2014-08-26 08:00	2014-08-27 16:00	2014-08-26 08:00	2014-08-27 16:00	2014-08-26 08:00	2014-08-27 16:00	2014-09-24 08:00	2014-09-25 16:00		PT_Normal					ZLsKplIu2ka2aHHPboctUA				N	0	0			2021-05-03 15:41	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35928	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1100	Center Wal-Structure  4 East Wye		416	0	48	0	0	0	48	0	0	0				2014-10-19 08:00	2014-10-24 16:00		2014-08-28 08:00	2014-09-02 16:00	2014-08-28 08:00	2014-09-02 16:00	2014-08-28 08:00	2014-09-02 16:00	2014-10-19 08:00	2014-10-24 16:00		PT_Normal					wZCeNxEt0kqbhr4ivQpswA				N	0	0			2021-05-03 15:41	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35929	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1110	Ductbank Center Wall- Structu-e 4 East Wye		416	288	8	0	0	0	8	0	0	0				2014-10-28 08:00	2014-10-28 16:00		2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-10-28 08:00	2014-10-28 16:00		PT_Normal					2zMZjbs2bk63nXAaZVEWsg				N	0	0			2021-05-03 15:42	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35930	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1111	Conduit for Ductbank Center Wall-  Struchre 4 East Wye		416	0	8	0	0	0	8	0	0	0				2014-10-25 08:00	2014-10-25 16:00		2014-09-03 08:00	2014-09-03 16:00	2014-09-03 08:00	2014-09-03 16:00	2014-09-03 08:00	2014-09-03 16:00	2014-10-25 08:00	2014-10-25 16:00		PT_Normal					RdT56egir0GCFM2IFlEozA				N	0	0			2021-05-03 15:42	2021-05-03 18:01	NotPrmUser	NotPrmUser	
+%R	35931	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1120	Ductbank Outer Wall- Structure 4 East Wye		416	0	16	0	0	0	16	0	0	0				2014-10-26 08:00	2014-10-27 16:00		2014-09-04 08:00	2014-09-05 16:00	2014-09-04 08:00	2014-09-05 16:00	2014-09-04 08:00	2014-09-05 16:00	2014-10-26 08:00	2014-10-27 16:00		PT_Normal					d1w/199YMkKzBiHZNSIWSg				N	0	0			2021-05-03 15:42	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35932	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1121	onduit for Ductbank Outer Wall- Structure 4 East Wye		424	8	16	0	0	0	16	0	0	0				2014-10-26 08:00	2014-10-27 16:00		2014-09-03 08:00	2014-09-04 16:00	2014-09-03 08:00	2014-09-04 16:00	2014-09-03 08:00	2014-09-04 16:00	2014-10-26 08:00	2014-10-27 16:00		PT_Normal					1JSy525Z40O1Bbu+wi5fZw				N	0	0			2021-05-03 15:43	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35933	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1130	Doors and Hardware-Structure 4 East Wye		784	0	8	0	0	0	8	0	0	0				2014-12-10 08:00	2014-12-10 16:00		2014-09-03 08:00	2014-09-03 16:00	2014-09-03 08:00	2014-09-03 16:00	2014-09-03 08:00	2014-09-03 16:00	2014-12-10 08:00	2014-12-10 16:00		PT_Normal					i7v8AOP63ECie3vvDuU15w				N	0	0			2021-05-03 15:44	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35934	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1131	Interior Signs-Structure 4 East Wye		784	0	8	0	0	0	8	0	0	0				2014-12-10 08:00	2014-12-10 16:00		2014-09-03 08:00	2014-09-03 16:00	2014-09-03 08:00	2014-09-03 16:00	2014-09-03 08:00	2014-09-03 16:00	2014-12-10 08:00	2014-12-10 16:00		PT_Normal					hgADmHxks0a/ESZ0M0lnXQ				N	0	0			2021-05-03 15:44	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35935	370	3687	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W4E-1140	Guardrail-Structure 4 East Wye		784	688	8	0	0	0	8	0	0	0				2014-12-11 08:00	2014-12-11 16:00		2014-09-04 08:00	2014-09-04 16:00	2014-09-04 08:00	2014-09-04 16:00	2014-09-04 08:00	2014-09-04 16:00	2014-12-11 08:00	2014-12-11 16:00		PT_Normal					FR7pzmP3AkW+81DMKgvWdQ				N	0	0			2021-05-03 15:45	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35936	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1220	End Wal-Structure  5 East Wye Transformer Niche		592	440	8	0	0	0	8	0	0	0				2014-11-19 08:00	2014-11-19 16:00		2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-11-19 08:00	2014-11-19 16:00		PT_Normal					sbN2T/0gpUK7R9WqFGqQtQ				N	0	0			2021-05-03 15:46	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35937	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1240	Smoothing and Backfill Shotcrete-Structure 5 East Wye		528	0	24	0	0	0	24	0	0	0				2014-08-09 08:00	2014-08-11 16:00		2014-06-04 08:00	2014-06-06 16:00	2014-06-04 08:00	2014-06-06 16:00	2014-06-04 08:00	2014-06-06 16:00	2014-08-09 08:00	2014-08-11 16:00		PT_Normal					sOKR0I2ZeUGgU4sKW/JzoA				N	0	0			2021-05-03 15:47	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35938	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1250	Waterproof-S1ructure 5 East Wye		288	0	64	0	0	0	64	0	0	0				2014-08-12 08:00	2014-08-19 16:00		2014-07-07 08:00	2014-07-14 16:00	2014-07-07 08:00	2014-07-14 16:00	2014-07-07 08:00	2014-07-14 16:00	2014-08-12 08:00	2014-08-19 16:00		PT_Normal					eo1V7vRrPkiUU6sLQd1bSQ				N	0	0			2021-05-03 15:47	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35939	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1260	Walls to Srringine-Structu-e 5 East Wye		240	0	112	0	0	0	112	0	0	0				2014-08-20 08:00	2014-09-02 16:00		2014-07-21 08:00	2014-08-03 16:00	2014-07-21 08:00	2014-08-03 16:00	2014-07-21 08:00	2014-08-03 16:00	2014-08-20 08:00	2014-09-02 16:00		PT_Normal					mvOaq5nEkE247BYLL1DgOQ				N	0	0			2021-05-03 15:48	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35940	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1265	Install Drain Pipe and Fittings-Walls to Springlhe-Structure 5 East Wye		288	48	112	0	0	0	112	0	0	0				2014-08-20 08:00	2014-09-02 16:00		2014-07-15 08:00	2014-07-28 16:00	2014-07-15 08:00	2014-07-28 16:00	2014-07-15 08:00	2014-07-28 16:00	2014-08-20 08:00	2014-09-02 16:00		PT_Normal					b7WOGeVaCkS8/sQDiMAujQ				N	0	0			2021-05-03 15:48	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35941	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1270	Install Arch Mesh Outer Layer-Structure 5 East Wye		240	0	16	0	0	0	16	0	0	0				2014-09-03 08:00	2014-09-04 16:00		2014-08-04 08:00	2014-08-05 16:00	2014-08-04 08:00	2014-08-05 16:00	2014-08-04 08:00	2014-08-05 16:00	2014-09-03 08:00	2014-09-04 16:00		PT_Normal					ho+mw0cvNUaSBjSkzaxuYQ				N	0	0			2021-05-03 15:49	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35942	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1280	Shotcrete Arch to Inner Layer-Structure 5 East Wye		240	144	16	0	0	0	16	0	0	0				2014-09-05 08:00	2014-09-06 16:00		2014-08-06 08:00	2014-08-07 16:00	2014-08-06 08:00	2014-08-07 16:00	2014-08-06 08:00	2014-08-07 16:00	2014-09-05 08:00	2014-09-06 16:00		PT_Normal					EZpt8TSMAE+DrjQw0NVR2Q				N	0	0			2021-05-03 15:49	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35943	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1290	Install Arch Mesh Inner Layer-Structure 5 East Wye		96	0	24	0	0	0	24	0	0	0				2014-09-07 08:00	2014-09-09 16:00		2014-08-26 08:00	2014-08-28 16:00	2014-08-26 08:00	2014-08-28 16:00	2014-08-26 08:00	2014-08-28 16:00	2014-09-07 08:00	2014-09-09 16:00		PT_Normal					E0GNIVs66UWf7Z3uTKOKsw				Y	0	0			2021-05-03 15:50	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35944	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1300	ShotcreteArch to Finish-Structure 5 East Wye		224	128	8	0	0	0	8	0	0	0				2014-09-26 08:00	2014-09-26 16:00		2014-08-29 08:00	2014-08-29 16:00	2014-08-29 08:00	2014-08-29 16:00	2014-08-29 08:00	2014-08-29 16:00	2014-09-26 08:00	2014-09-26 16:00		PT_Normal					EVJMPAMiv0SotCI+GS948A				N	0	0			2021-05-03 15:50	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35945	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1310	Center Wal-Structure 5 East Wye		592	0	24	0	0	0	24	0	0	0				2014-11-16 08:00	2014-11-18 16:00		2014-09-03 08:00	2014-09-05 16:00	2014-09-03 08:00	2014-09-05 16:00	2014-09-03 08:00	2014-09-05 16:00	2014-11-16 08:00	2014-11-18 16:00		PT_Normal					zGq9/KPn7kquD5u1IdnukA				N	0	0			2021-05-03 15:50	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35946	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1320	Ductbank Center Wall-Structu-e 5 East Wye (Two Crews)		96	0	8	0	0	0	8	0	0	0				2014-11-21 08:00	2014-11-21 16:00		2014-11-09 08:00	2014-11-09 16:00	2014-11-09 08:00	2014-11-09 16:00	2014-11-09 08:00	2014-11-09 16:00	2014-11-21 08:00	2014-11-21 16:00		PT_Normal					TkfoKYM9WESWzhs2KOQ/hw				Y	0	0			2021-05-03 15:51	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35947	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1321	Conduit for Ductbank Center Wall-Structure 5 East Wye (Two Crews)		152	56	8	0	0	0	8	0	0	0				2014-11-20 08:00	2014-11-20 16:00		2014-11-01 08:00	2014-11-01 16:00	2014-11-01 08:00	2014-11-01 16:00	2014-11-01 08:00	2014-11-01 16:00	2014-11-20 08:00	2014-11-20 16:00		PT_Normal					8vic8IVj3E2wcOUq5Uyi4A				N	0	0			2021-05-03 15:52	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35948	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1330	Ductbank Outer Wall-Structure 5 East Wye		96	0	48	0	0	0	48	0	0	0				2014-11-22 08:00	2014-11-27 16:00		2014-11-10 08:00	2014-11-15 16:00	2014-11-10 08:00	2014-11-15 16:00	2014-11-10 08:00	2014-11-15 16:00	2014-11-22 08:00	2014-11-27 16:00		PT_Normal					uSCLWCs8qE2rX5lTgEkwQg				Y	0	0			2021-05-03 15:52	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35949	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1331	Conduit for Ductbank Outer Wall-Structure 5 East Wye		120	24	48	0	0	0	48	0	0	0				2014-11-16 08:00	2014-11-21 16:00		2014-11-01 08:00	2014-11-06 16:00	2014-11-01 08:00	2014-11-06 16:00	2014-11-01 08:00	2014-11-06 16:00	2014-11-16 08:00	2014-11-21 16:00		PT_Normal					c1h8MsOBlEWHG1OOPlM8iA				N	0	0			2021-05-03 15:57	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35950	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1450	Doors and Hardware-Structure 5 East Wye		768	672	8	0	0	0	8	0	0	0				2014-12-11 08:00	2014-12-11 16:00		2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-12-11 08:00	2014-12-11 16:00		PT_Normal					zk7gPUSnmU66LYwBrJp1wg				N	0	0			2021-05-03 16:00	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35951	370	3688	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	W5E-1451	Interior Signs-Structure 5 East Wye		768	672	8	0	0	0	8	0	0	0				2014-12-11 08:00	2014-12-11 16:00		2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-09-06 08:00	2014-09-06 16:00	2014-12-11 08:00	2014-12-11 16:00		PT_Normal					DkbJ9to310CMDJjYco7boQ				N	0	0			2021-05-03 16:00	2021-05-03 16:03	NotPrmUser	NotPrmUser	
+%R	35953	370	3685	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	ACE 1051	Conduit for ductbank east assembly chamber		96	0	8	0	0	0	8	0	0	0				2014-12-10 08:00	2014-12-10 16:00		2014-11-28 08:00	2014-11-28 16:00	2014-11-28 08:00	2014-11-28 16:00	2014-11-28 08:00	2014-11-28 16:00	2014-12-10 08:00	2014-12-10 16:00		PT_Normal					6XKsMtLtTE2GUV0jTXm+mw				Y	0	0			2021-05-03 17:02	2021-05-03 18:40	NotPrmUser	NotPrmUser	
+%R	35955	370	3689	638	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	07122S-1430	Submit waterproofing shop drawings structure 5 east wye		328	0	8	0	0	0	8	0	0	0				2014-07-12 08:00	2014-07-12 16:00		2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-06-01 08:00	2014-06-01 16:00	2014-07-12 08:00	2014-07-12 16:00		PT_Normal					mcco7ICTIkOSAe12RZN5nA				N	0	0			2021-05-03 18:00	2021-05-03 18:00	NotPrmUser	NotPrmUser	
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	proj_id	pred_proj_id	pred_type	lag_hr_cnt	float_path	aref	arls
+%R	1231	35915	35845	370	370	PR_FS	0		2014-06-01 00:00	2014-07-22 08:00
+%R	1232	35937	35845	370	370	PR_FS	0		2014-06-01 00:00	2014-08-09 08:00
+%R	1233	35874	35845	370	370	PR_FS	0		2014-06-01 00:00	2014-08-18 08:00
+%R	1234	35845	35846	370	370	PR_FS	0		2014-06-01 00:00	2014-07-22 08:00
+%R	1235	35918	35847	370	370	PR_FS	0		2014-07-20 16:00	2014-08-02 08:00
+%R	1236	35929	35849	370	370	PR_FS	0		2014-07-20 16:00	2014-10-28 08:00
+%R	1237	35922	35849	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1238	35926	35850	370	370	PR_FS	0		2014-07-20 16:00	2014-09-01 08:00
+%R	1239	35924	35850	370	370	PR_FS	0		2014-07-20 16:00	2014-08-23 08:00
+%R	1240	35893	35851	370	370	PR_FS	0		2014-07-20 16:00	2014-11-11 08:00
+%R	1241	35885	35851	370	370	PR_FS	0		2014-07-20 16:00	2014-11-10 08:00
+%R	1242	35903	35851	370	370	PR_FS	0		2014-07-20 16:00	2014-11-12 08:00
+%R	1243	35906	35852	370	370	PR_FS	0		2014-07-20 16:00	2014-10-18 08:00
+%R	1244	35911	35852	370	370	PR_FS	0		2014-07-20 16:00	2014-09-10 08:00
+%R	1245	35898	35852	370	370	PR_FS	0		2014-07-20 16:00	2014-10-20 08:00
+%R	1246	35945	35853	370	370	PR_FS	0		2014-07-20 16:00	2014-11-16 08:00
+%R	1247	35939	35853	370	370	PR_FS	0		2014-07-20 16:00	2014-08-20 08:00
+%R	1248	35943	35854	370	370	PR_FS	0		2014-07-20 16:00	2014-09-07 08:00
+%R	1249	35941	35854	370	370	PR_FS	0		2014-07-20 16:00	2014-09-03 08:00
+%R	1252	35877	35856	370	370	PR_FS	0		2014-07-01 16:00	2014-12-03 08:00
+%R	1253	35931	35857	370	370	PR_FS	0		2014-07-20 16:00	2014-10-26 08:00
+%R	1254	35929	35857	370	370	PR_FS	0		2014-07-20 16:00	2014-10-28 08:00
+%R	1255	35847	35858	370	370	PR_FS	0		2014-06-20 16:00	2014-07-03 08:00
+%R	1256	35849	35859	370	370	PR_FS	0		2014-06-20 16:00	2014-07-15 08:00
+%R	1257	35850	35860	370	370	PR_FS	0		2014-06-20 16:00	2014-07-24 08:00
+%R	1258	35851	35861	370	370	PR_FS	0		2014-06-20 16:00	2014-10-11 08:00
+%R	1259	35852	35862	370	370	PR_FS	0		2014-06-20 16:00	2014-08-11 08:00
+%R	1260	35853	35863	370	370	PR_FS	0		2014-06-20 16:00	2014-07-21 08:00
+%R	1261	35854	35864	370	370	PR_FS	0		2014-06-20 16:00	2014-08-04 08:00
+%R	1262	35856	35865	370	370	PR_FS	0		2014-06-30 16:00	2014-12-02 08:00
+%R	1263	35857	35866	370	370	PR_FS	0		2014-06-20 16:00	2014-09-26 08:00
+%R	1264	35944	35867	370	370	PR_FS	0		2014-06-30 16:00	2014-09-26 08:00
+%R	1265	35942	35867	370	370	PR_FS	0		2014-06-30 16:00	2014-09-05 08:00
+%R	1266	35925	35867	370	370	PR_FS	0		2014-06-30 16:00	2014-08-29 08:00
+%R	1267	35927	35867	370	370	PR_FS	0		2014-06-30 16:00	2014-09-24 08:00
+%R	1268	35867	35868	370	370	PR_FS	0		2014-06-01 00:00	2014-07-30 08:00
+%R	1269	35910	35869	370	370	PR_FS	0		2014-07-01 16:00	2014-11-11 08:00
+%R	1270	35884	35869	370	370	PR_FS	0		2014-07-01 16:00	2014-08-07 08:00
+%R	1271	35902	35869	370	370	PR_FS	0		2014-07-01 16:00	2014-08-10 08:00
+%R	1272	35892	35869	370	370	PR_FS	0		2014-07-01 16:00	2014-08-08 08:00
+%R	1273	35917	35870	370	370	PR_FS	0		2014-07-01 16:00	2014-07-26 08:00
+%R	1274	35938	35871	370	370	PR_FS	0		2014-07-01 16:00	2014-08-12 08:00
+%R	1276	35869	35872	370	370	PR_FS	0		2014-06-01 16:00	2014-07-08 08:00
+%R	1277	35870	35873	370	370	PR_FS	0		2014-06-01 16:00	2014-06-26 08:00
+%R	1278	35940	35874	370	370	PR_FS	0		2014-06-08 16:00	2014-08-20 08:00
+%R	1279	35939	35874	370	370	PR_FS	0		2014-06-08 16:00	2014-08-20 08:00
+%R	1280	35875	35874	370	370	PR_FS	0		2014-06-08 16:00	2014-11-30 08:00
+%R	1281	35876	35875	370	370	PR_FS	0		2014-06-09 16:00	2014-12-01 08:00
+%R	1282	35877	35876	370	370	PR_FS	0		2014-08-05 16:00	2014-12-03 08:00
+%R	1283	35878	35877	370	370	PR_FS	0		2014-09-19 16:00	2014-12-08 08:00
+%R	1284	35953	35878	370	370	PR_FS	0		2014-10-09 16:00	2014-12-10 08:00
+%R	1285	35883	35879	370	370	PR_FS	0		2014-11-29 16:00	2014-12-11 16:00
+%R	1286	35879	35953	370	370	PR_FS	0		2014-11-28 16:00	2014-12-11 08:00
+%R	1287	35872	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-07 08:00
+%R	1288	35873	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-06-25 08:00
+%R	1290	35871	35955	370	370	PR_FS	0		2014-06-01 16:00	2014-07-13 08:00
+%R	1291	35864	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-15 08:00
+%R	1292	35868	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-30 08:00
+%R	1293	35858	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-06-13 08:00
+%R	1294	35859	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-06-25 08:00
+%R	1295	35860	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-04 08:00
+%R	1296	35861	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-09-21 08:00
+%R	1297	35862	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-22 08:00
+%R	1298	35863	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-01 08:00
+%R	1299	35864	35880	370	370	PR_SS	0		2014-06-01 00:00	2014-07-15 08:00
+%R	1300	35866	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-09-06 08:00
+%R	1301	35865	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-11-02 08:00
+%R	1302	35872	35880	370	370	PR_SS	0		2014-06-01 00:00	2014-07-07 08:00
+%R	1303	35873	35880	370	370	PR_SS	0		2014-06-01 00:00	2014-06-25 08:00
+%R	1305	35955	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-12 08:00
+%R	1306	35846	35880	370	370	PR_FS	0		2014-06-01 00:00	2014-07-22 08:00
+%R	1307	35886	35884	370	370	PR_FS	0		2014-07-02 16:00	2014-12-04 08:00
+%R	1308	35885	35884	370	370	PR_FS	0		2014-07-02 16:00	2014-11-10 08:00
+%R	1310	35892	35884	370	370	PR_FS	0		2014-07-02 16:00	2014-08-08 08:00
+%R	1311	35887	35885	370	370	PR_FS	0		2014-07-21 16:00	2014-12-05 08:00
+%R	1312	35894	35885	370	370	PR_FS	0		2014-07-21 16:00	2014-11-11 08:00
+%R	1313	35893	35885	370	370	PR_FS	0		2014-07-21 16:00	2014-11-11 08:00
+%R	1314	35887	35886	370	370	PR_FS	0		2014-07-03 16:00	2014-12-05 08:00
+%R	1315	35895	35887	370	370	PR_FS	0		2014-07-22 16:00	2014-12-06 08:00
+%R	1316	35899	35888	370	370	PR_FS	0		2014-08-27 16:00	2014-10-22 08:00
+%R	1318	35906	35888	370	370	PR_FS	0		2014-08-27 16:00	2014-10-18 08:00
+%R	1319	35901	35889	370	370	PR_FS	0		2014-06-01 16:00	2014-10-24 08:00
+%R	1320	35900	35890	370	370	PR_FS	0		2014-10-13 16:00	2014-10-30 08:00
+%R	1321	35900	35891	370	370	PR_FS	0		2014-10-12 16:00	2014-10-30 08:00
+%R	1322	35890	35891	370	370	PR_FS	0		2014-10-12 16:00	2014-10-29 08:00
+%R	1323	35893	35892	370	370	PR_FS	0		2014-07-04 16:00	2014-11-11 08:00
+%R	1324	35902	35892	370	370	PR_FS	0		2014-07-04 16:00	2014-08-10 08:00
+%R	1325	35903	35893	370	370	PR_FS	0		2014-07-22 16:00	2014-11-12 08:00
+%R	1326	35904	35893	370	370	PR_FS	0		2014-07-22 16:00	2014-12-07 08:00
+%R	1328	35895	35893	370	370	PR_FS	0		2014-07-22 16:00	2014-12-06 08:00
+%R	1329	35895	35894	370	370	PR_FS	0		2014-07-22 16:00	2014-12-06 08:00
+%R	1330	35904	35894	370	370	PR_FS	0		2014-07-22 16:00	2014-12-07 08:00
+%R	1331	35903	35894	370	370	PR_FS	0		2014-07-22 16:00	2014-11-12 08:00
+%R	1332	35905	35895	370	370	PR_FS	0		2014-07-23 16:00	2014-12-07 08:00
+%R	1333	35899	35898	370	370	PR_FS	0		2014-08-31 16:00	2014-10-22 08:00
+%R	1334	35901	35899	370	370	PR_FS	0		2014-10-11 16:00	2014-10-24 08:00
+%R	1335	35891	35899	370	370	PR_FS	0		2014-10-11 16:00	2014-10-28 08:00
+%R	1336	35909	35900	370	370	PR_FS	0		2014-10-23 16:00	2014-11-05 08:00
+%R	1337	35908	35900	370	370	PR_FS	0		2014-10-23 16:00	2014-11-13 08:00
+%R	1338	35908	35901	370	370	PR_FS	0		2014-10-17 16:00	2014-11-13 08:00
+%R	1339	35900	35901	370	370	PR_FS	0		2014-10-17 16:00	2014-10-30 08:00
+%R	1340	35910	35902	370	370	PR_FS	0		2014-07-06 16:00	2014-11-11 08:00
+%R	1341	35903	35902	370	370	PR_FS	0		2014-07-06 16:00	2014-11-12 08:00
+%R	1342	35904	35902	370	370	PR_FS	0		2014-07-06 16:00	2014-12-07 08:00
+%R	1343	35938	35902	370	370	PR_FS	0		2014-07-06 16:00	2014-08-12 08:00
+%R	1344	35908	35903	370	370	PR_FS	0		2014-07-23 16:00	2014-11-13 08:00
+%R	1345	35905	35903	370	370	PR_FS	0		2014-07-23 16:00	2014-12-07 08:00
+%R	1346	35905	35904	370	370	PR_FF	0		2014-07-23 08:00	2014-12-07 16:00
+%R	1347	35878	35905	370	370	PR_FS	0		2014-07-24 16:00	2014-12-08 08:00
+%R	1348	35898	35906	370	370	PR_FS	0		2014-08-29 16:00	2014-10-20 08:00
+%R	1349	35907	35906	370	370	PR_FS	0		2014-08-29 16:00	2014-10-20 08:00
+%R	1350	35899	35907	370	370	PR_FS	0		2014-10-09 16:00	2014-10-22 08:00
+%R	1351	35908	35907	370	370	PR_FS	0		2014-10-09 16:00	2014-11-13 08:00
+%R	1352	35946	35908	370	370	PR_FS	0		2014-11-08 16:00	2014-11-21 08:00
+%R	1353	35948	35908	370	370	PR_FS	0		2014-11-08 16:00	2014-11-22 08:00
+%R	1354	35908	35909	370	370	PR_FS	0		2014-10-31 16:00	2014-11-13 08:00
+%R	1355	35947	35909	370	370	PR_FS	0		2014-10-31 16:00	2014-11-20 08:00
+%R	1356	35949	35909	370	370	PR_FS	0		2014-10-31 16:00	2014-11-16 08:00
+%R	1358	35876	35910	370	370	PR_FS	0		2014-08-03 16:00	2014-12-01 08:00
+%R	1359	35912	35911	370	370	PR_FS	0		2014-09-14 16:00	2014-09-27 08:00
+%R	1360	35877	35911	370	370	PR_FS	0		2014-09-14 16:00	2014-12-03 08:00
+%R	1361	35907	35912	370	370	PR_FS	0		2014-10-07 16:00	2014-10-20 08:00
+%R	1362	35878	35912	370	370	PR_FS	0		2014-10-07 16:00	2014-12-08 08:00
+%R	1363	35914	35912	370	370	PR_FS	0		2014-10-07 16:00	2014-11-16 08:00
+%R	1364	35953	35913	370	370	PR_FS	0		2014-11-27 16:00	2014-12-10 08:00
+%R	1365	35913	35914	370	370	PR_FS	0		2014-10-19 16:00	2014-11-28 08:00
+%R	1366	35916	35915	370	370	PR_FS	0		2014-06-03 16:00	2014-07-25 08:00
+%R	1367	35937	35915	370	370	PR_FS	0		2014-06-03 16:00	2014-08-09 08:00
+%R	1368	35917	35916	370	370	PR_FS	0		2014-06-04 16:00	2014-07-26 08:00
+%R	1369	35920	35917	370	370	PR_FS	0		2014-07-08 16:00	2014-08-02 08:00
+%R	1370	35919	35917	370	370	PR_FS	0		2014-07-08 16:00	2014-08-02 08:00
+%R	1371	35921	35917	370	370	PR_FS	0		2014-07-08 16:00	2014-08-02 08:00
+%R	1372	35918	35917	370	370	PR_FS	0		2014-07-08 16:00	2014-08-02 08:00
+%R	1373	35923	35918	370	370	PR_FS	0		2014-08-01 16:00	2014-08-14 08:00
+%R	1374	35922	35918	370	370	PR_FS	0		2014-08-01 16:00	2014-08-14 08:00
+%R	1375	35922	35919	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1376	35923	35919	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1377	35923	35920	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1378	35922	35920	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1379	35922	35921	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1380	35923	35921	370	370	PR_FS	0		2014-07-20 16:00	2014-08-14 08:00
+%R	1381	35924	35922	370	370	PR_FS	0		2014-08-10 16:00	2014-08-23 08:00
+%R	1382	35924	35923	370	370	PR_FS	0		2014-08-10 16:00	2014-08-23 08:00
+%R	1383	35925	35924	370	370	PR_FS	0		2014-08-16 16:00	2014-08-29 08:00
+%R	1384	35926	35925	370	370	PR_FS	0		2014-08-19 16:00	2014-09-01 08:00
+%R	1385	35927	35926	370	370	PR_FS	0		2014-08-25 16:00	2014-09-24 08:00
+%R	1386	35943	35926	370	370	PR_FS	0		2014-08-25 16:00	2014-09-07 08:00
+%R	1387	35888	35926	370	370	PR_FS	0		2014-08-25 16:00	2014-10-16 08:00
+%R	1388	35928	35927	370	370	PR_FS	0		2014-08-27 16:00	2014-10-19 08:00
+%R	1389	35944	35927	370	370	PR_FS	0		2014-08-27 16:00	2014-09-26 08:00
+%R	1390	35945	35928	370	370	PR_FS	0		2014-09-02 16:00	2014-11-16 08:00
+%R	1391	35933	35928	370	370	PR_FS	0		2014-09-02 16:00	2014-12-10 08:00
+%R	1392	35934	35928	370	370	PR_FS	0		2014-09-02 16:00	2014-12-10 08:00
+%R	1393	35931	35928	370	370	PR_FS	0		2014-09-02 16:00	2014-10-26 08:00
+%R	1394	35932	35928	370	370	PR_FS	0		2014-09-02 16:00	2014-10-26 08:00
+%R	1395	35930	35928	370	370	PR_FS	0		2014-09-02 16:00	2014-10-25 08:00
+%R	1396	35890	35929	370	370	PR_FS	0		2014-09-06 16:00	2014-10-29 08:00
+%R	1397	35931	35930	370	370	PR_FS	0		2014-09-03 16:00	2014-10-26 08:00
+%R	1398	35890	35931	370	370	PR_FS	0		2014-09-05 16:00	2014-10-29 08:00
+%R	1399	35891	35931	370	370	PR_FS	0		2014-09-05 16:00	2014-10-28 08:00
+%R	1400	35929	35931	370	370	PR_FS	0		2014-09-05 16:00	2014-10-28 08:00
+%R	1402	35890	35932	370	370	PR_FS	0		2014-09-04 16:00	2014-10-29 08:00
+%R	1403	35929	35932	370	370	PR_FS	0		2014-09-04 16:00	2014-10-28 08:00
+%R	1404	35935	35933	370	370	PR_FS	0		2014-09-03 16:00	2014-12-11 08:00
+%R	1405	35935	35934	370	370	PR_FS	0		2014-09-03 16:00	2014-12-11 08:00
+%R	1406	35883	35935	370	370	PR_FS	0		2014-09-04 16:00	2014-12-11 16:00
+%R	1407	35946	35936	370	370	PR_FS	0		2014-09-06 16:00	2014-11-21 08:00
+%R	1408	35947	35936	370	370	PR_FS	0		2014-09-06 16:00	2014-11-20 08:00
+%R	1409	35938	35937	370	370	PR_FS	0		2014-06-06 16:00	2014-08-12 08:00
+%R	1410	35874	35937	370	370	PR_FS	0		2014-06-06 16:00	2014-08-18 08:00
+%R	1411	35939	35938	370	370	PR_FS	0		2014-07-14 16:00	2014-08-20 08:00
+%R	1412	35940	35938	370	370	PR_FS	0		2014-07-14 16:00	2014-08-20 08:00
+%R	1413	35910	35938	370	370	PR_FS	0		2014-07-14 16:00	2014-11-11 08:00
+%R	1414	35941	35939	370	370	PR_FS	0		2014-08-03 16:00	2014-09-03 08:00
+%R	1415	35941	35940	370	370	PR_FS	0		2014-07-28 16:00	2014-09-03 08:00
+%R	1416	35942	35941	370	370	PR_FS	0		2014-08-05 16:00	2014-09-05 08:00
+%R	1417	35943	35942	370	370	PR_FS	0		2014-08-07 16:00	2014-09-07 08:00
+%R	1418	35944	35943	370	370	PR_FS	0		2014-08-28 16:00	2014-09-26 08:00
+%R	1419	35911	35943	370	370	PR_FS	0		2014-08-28 16:00	2014-09-10 08:00
+%R	1420	35912	35944	370	370	PR_FS	0		2014-08-29 16:00	2014-09-27 08:00
+%R	1421	35936	35945	370	370	PR_FS	0		2014-09-05 16:00	2014-11-19 08:00
+%R	1422	35950	35945	370	370	PR_FS	0		2014-09-05 16:00	2014-12-11 08:00
+%R	1423	35951	35945	370	370	PR_FS	0		2014-09-05 16:00	2014-12-11 08:00
+%R	1424	35948	35946	370	370	PR_FS	0		2014-11-09 16:00	2014-11-22 08:00
+%R	1425	35946	35947	370	370	PR_FS	0		2014-11-01 16:00	2014-11-21 08:00
+%R	1426	35913	35948	370	370	PR_FS	0		2014-11-15 16:00	2014-11-28 08:00
+%R	1427	35948	35949	370	370	PR_FS	0		2014-11-06 16:00	2014-11-22 08:00
+%R	1428	35883	35950	370	370	PR_FS	0		2014-09-06 16:00	2014-12-11 16:00
+%R	1429	35883	35951	370	370	PR_FS	0		2014-09-06 16:00	2014-12-11 16:00
+%E
